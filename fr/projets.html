@@ -6,6 +6,31 @@
     <title>Projets</title>
 </head>
 <body>
+        <header>
+            <div class="header">
+                <a href="/index.html">
+                    <img src="public/img/images sae/logo.webp" alt="logo" width=50%>
+                </a>
+                <h1>Alien from space</h1>
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                    <img src="/public/img/menu burger icone.webp" alt="menu" width=100%>
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <li><a href="/fr/acceuil.html">Acceuil</a>
+                        </li>
+                        <li><a href="/fr/articles1.html">"Dans l'espace, personne ne
+                                vous entend crier"</a>
+                        </li>
+                        <li><a href="/fr/articles2.html">"Alien, le 8ème Passager"</a>
+                        </li>
+                        <li><a href="/fr/articles3.html">Ridley Scott</a></li>
+                        </li>
+                        <li><a href="/fr/articles4.html">Shining" de Stephen King</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <p>Autres projets</p>
     <p>Mission Cléopâtre
     Chloé Vincent</p>

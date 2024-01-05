@@ -12,6 +12,30 @@
 </head>
 
 <body>
+        <header>
+            <div class="header">
+                <a href="/index.html">
+                    <img src="public/img/images sae/logo.webp" alt="logo" width=50%>
+                </a>
+                <h1>Architexture</h1>
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                    <img src="public/img/images sae/menu.png" alt="menu" width=100%>
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <li><a href="/index.html">Accueil</a>
+                        </li>
+                        <li><a href="/liens/Infos.html">Infos</a>
+                        </li>
+                        <li><a href="/liens/billeterie.html">Billeterie</a>
+                        </li>
+                        <li><a href="/liens/contact.html">Contact</a></li>
+                        </li>
+                        <li><a href="/liens/graves.html">M.Graves</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <p>
         "Dans l'espace, personne ne vous entend crier"</p>
 

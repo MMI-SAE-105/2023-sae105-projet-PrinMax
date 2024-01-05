@@ -6,6 +6,31 @@
     <title>articles 1</title>
 </head>
 <body>
+        <header>
+            <div class="header">
+                <a href="/index.html">
+                    <img src="public/img/images sae/logo.webp" alt="logo" width=50%>
+                </a>
+                <h1>Alien from space</h1>
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                    <img src="public/img/images sae/menu.png" alt="menu" width=100%>
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <li><a href="/index.html">Homepage</a>
+                        </li>
+                        <li><a href="/liens/Infos.html">"In space, no one hears you
+                        scream"</a>
+                        </li>
+                        <li><a href="/liens/billeterie.html">"Alien, the 8th Passenger"</a>
+                        </li>
+                        <li><a href="/liens/contact.html">Ridley Scott</a></li>
+                        </li>
+                        <li><a href="/liens/graves.html">Shining" by Stephen King</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <p>"In space, no one hears you
     scream"</p>
     <p>The cinema have known many lines, but few have
