@@ -2,3 +2,7 @@ main {
     background-color: #E7E7E7;
     text-decoration: none;
 }
+
+legend {
+    margin-top: -20px;
+}
