@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Acceuil</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-        <header>
-            <div class="header">
-                <a href="/index.html">
-                    <img src="/public/img/logo.png" alt="logo" width=75%>
-                </a>
-                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-                    <img src="/public/img/menu burger icone.webp" alt="menu" width=100%>
-                </button>
-                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-                    <ul>
-                        <li><a href="/fr/acceuil.html">Acceuil</a>
-                        </li>
-                        <li><a href="/fr/articles1.html">"Dans l'espace, personne ne
-                                vous entend crier"</a>
-                        </li>
-                        <li><a href="/fr/articles2.html">"Alien, le 8ème Passager"</a>
-                        </li>
-                        <li><a href="/fr/articles3.html">Ridley Scott</a></li>
-                        </li>
-                        <li><a href="/fr/articles4.html">Shining" de Stephen King</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    <p>
-        "Dans l'espace, personne ne vous entend crier"</p>
+    <header>
+        <div class="header">
+            <a href="/fr/acceuil.html">
+                <img src="/public/img/logo.png" alt="logo" width=75%>
+            </a>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img src="/public/img/menu burger icone.webp" alt="menu" width=100%>
+            </button>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                    <li><a href="/fr/acceuil.html">Acceuil</a>
+                    </li>
+                    <li><a href="/fr/articles1.html">"Dans l'espace, personne ne
+                            vous entend crier"</a>
+                    </li>
+                    <li><a href="/fr/articles2.html">"Alien, le 8ème Passager"</a>
+                    </li>
+                    <li><a href="/fr/articles3.html">Ridley Scott</a></li>
+                    </li>
+                    <li><a href="/fr/articles4.html">Shining" de Stephen King</a></li>
+                    <li><a href="/fr/articles5.html">La musique derrière l'Alien</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="texte">"Dans l'espace, personne ne vous entend crier"</h1>
 
-    <p>Sur ce site, vous trouverez des articles autour de cette réplique, du film Alien le 8eme passager ainsi qu’une
-        musique
-        utilisée dans ce film, mais vous trouverez aussi un article a propos de son auteur ainsi que sur des livres et
-        films qui sont dans le même thème.</p>
+        <p class="texte">Ce site, vous trouverez des articles autour de cette réplique, du film Alien le 8eme passager
+            ainsi qu’une musique
+            utilisée dans ce film, mais vous trouverez aussi un article a propos de son auteur ainsi que sur des livres
+            et
+            films qui sont dans le même thème.</p>
+        <img src="/public/img/acceuil.webp" alt="image de page d'accueil" width=100%>
+        <legend>
+            <p>
+            <h5>Alien, le huitième passager (1979).</h5>
+            </p>
+        </legend>
+        <a href="/fr/articles1.html">
+            <img src="/public/img/article 1.webp" alt="article 1" width=100%>
+        </a>
+        <a href="/fr/articles2.html">
+            <img src="/public/img/articles 2.webp" alt="article 2" width=100%>
+        </a>
+        <a href="/fr/articles3.html">
+            <img src="/public/img/articles 3.webp" alt="article 3" width=100%>
+        </a>
+        <a href="/fr/articles4.html">
+            <img src="/public/img/articles 4.webp" alt="article 4" width=100%>
+        </a>
+        <a href="/fr/articles5.html">
+            <img src="/public/img/articles 5.webp" alt="article 5" width=100%>
+        </a>
+    </main>
+    <footer>
+        <div class="footer__grid">
+            <div class="footer__grid-left">
+                <a href="/fr/contact.html">Contact</a>
+                <a href="/fr/Apropos.html">A propos</a>
+                <a href="/en/home.html">Langue: FR</a>
+            </div>
+            <div class="footer__grid-right">
+                <a href="/fr/glossaire.html">Glossaire</a>
+                <a href="/fr/projets.html">Autres projets</a>
+            </div>
+        </div>
+        <p>Prin Max</p>
+        <p>B1</p>
+        <p>mail: Maxprin16@Gmail.com</p>
+        <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard.</p>
+    </footer>
 </body>
 
 </html>
