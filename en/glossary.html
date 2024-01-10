@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glossaire</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+        <header>
+            <div class="header">
+                <a href="/en/home.html">
+                    <img src="/public/img/logo.png" alt="logo" width=75%>
+                </a>
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                    <img src="/public/img/menu burger icone.webp" alt="menu" width=100%>
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <li><a href="/en/home.html">Homepage</a>
+                        </li>
+                        <li><a href="/en/article1eng.html">"In space, no one hears you
+                                scream"</a>
+                        </li>
+                        <li><a href="/en/articles2eng.html">"Alien, the 8th Passenger"</a>
+                        </li>
+                        <li><a href="/en/articles3eng.html">Ridley Scott</a></li>
+                        </li>
+                        <li><a href="/en/articles4eng.html">Shining" by Stephen King</a></li>
+                        <li><a href="/en/articles5eng.html">The music behind the Alien</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+    <h1 class="texte">Glossary</h1>
+    <h2 class="texte">Synopsis:</h2>
+    <p class="texte">A very brief account which constitutes a pattern of
+    scenario.</p>
+    
+    <h2 class="texte">Oppresing:</h2>
+    <p class="texte">Obstruct breathing by feeling pressure.</p>
+</main>
+</body>
+<footer>
+    <div class="footer__grid">
+        <div class="footer__grid-left">
+            <a href="/fr/contact.html">Contact</a>
+            <a href="/fr/Apropos.html">About</a>
+            <a href="/fr/acceuil.html">Language: EN</a>
+        </div>
+        <div class="footer__grid-right">
+            <a href="/en/glossary.html">Glossary</a>
+            <a href="/fr/projets.html">Others projects</a>
+        </div>
+    </div>
+    <p>Prin Max</p>
+    <p>B1</p>
+    <p>mail: Maxprin16@Gmail.com</p>
+    <p>This site is a project carried out as part of an educational exercise in the Montbéliard MMI department.</p>
+    <img src="/public/img/MMI_-_logo_quadri_-white.png" alt="MMI" width=30%>
+</footer>
+</html>
