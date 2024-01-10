@@ -1,6 +1,7 @@
 main {
     background-color: #E7E7E7;
     text-decoration: none;
+    font-family: 'Carme', sans-serif;
 }
 
 legend {
@@ -10,4 +11,5 @@ legend {
 
 .texte {
     padding-left: 5px;
+    font-family: 'Carme', sans-serif;
 }
